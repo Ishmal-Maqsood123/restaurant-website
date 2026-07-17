@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 25px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+}
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
+#logo{
+    margin: 0;
+}
+.logoName{
+    text-decoration: none;
+     font-size:1.8rem;
+    font-weight:700;
+    color: rgb(249, 244, 244);
+}
+#navbar ul{
+    display: flex;
+    margin-left: 50px;  
+   gap: 20px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    padding: 8px 14px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: #8B0000;
+    background-color: rgb(255, 255, 255);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+position: relative;
+min-height: 100vh;
+padding-top: 100px;
+}
+#home::before{
+    content: "";
+    background-image: url('./images/bg1.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+.head{
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border-radius: 10px;
+    background-color: brown;
+    border: 1px solid brown;
+    margin: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background:#8b0000;
+    transform:scale(1.05);
+}
+#services {
+    margin: 34px;
+    display: flex;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(231, 222, 222);
+    flex:1;
+}
+#services .box p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.box{
+    transition:0.4s;
+}
+.form-box:last-child{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+.form-box .btn{
+    width:200px;
+}
+.box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+.order{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+padding: 12px;
+text-align: center;
+margin: 40px 0;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-image: url('./images/bg.jpg');
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client img{
+    height: 130px;
+}
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding: 30px;
+}
+.logo img{
+    transition:.3s;
+}
+.logo img:hover{
+    transform:scale(1.1);
+}
+.logoName{
+    transition:.3s;
+}
+.logoName:hover{
+    color:#ffb347;
+}
+#menu{
+    padding:70px 8%;
+    background:#f8f8f8;
+}
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+.menu-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    text-align:center;
+    transition:.3s;
+}
+.menu-card:hover{
+    transform:translateY(-10px);
+}
+.menu-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.menu-card h2{
+    margin:15px 0 10px;
+}
+.menu-card p{
+    padding:0 18px;
+    color:#555;
+}
+.menu-card h3{
+    color:brown;
+    margin:15px 0;
+}
+.menu-card .btn{
+    margin-bottom:20px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#form input, 
+#form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#form form{
+    width: 40%;
+}
+#form label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+ }
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+/* RESPONSIVE DESIGN */
+/* Laptop */
+@media (max-width: 992px){
+    #home{
+        padding:120px 50px 60px;
+    }
+    #home h1{
+        font-size:2.5rem;
+    }
+    #home p{
+        font-size:1.2rem;
+    }
+    #services{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .box{
+        width:45%;
+        margin:10px;
+    }
+    #form form{
+        width:70%;
+    }
+}
+/* Tablet */
+@media (max-width:768px){
+#navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 20px;
+}
+.menu-toggle{
+    display:block;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
+/* Hidden Menu */
+#navbar ul{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+    background:rgba(0,0,0,0.95);
+}
+#navbar ul.active{
+    display:flex;
+}
+#navbar ul li{
+    margin:15px 0;
+}
+}
+/* Mobile */
+@media (max-width:480px){
+    .menu-toggle{
+    display:block;
+}
+#navbar ul li a{
+    display:block;
+    padding:12px;
+}
+    #navbar{
+        padding:12px;
+    }
+    .logoName{
+        font-size:1.4rem;
+    }
+    #navbar ul{
+        gap:8px;
+    }
+    #navbar ul li{
+        font-size:1rem;
+    }
+    #home{
+        padding:160px 15px 40px;
+    }
+    #home h1{
+        font-size:1.7rem;
+    }
+    #home p{
+        font-size:.95rem;
+    }
+    .order{
+        font-size:1.6rem;
+    }
+    #services{
+        margin:20px 10px;
+    }
+    .box{
+        width:100%;
+        padding:20px;
+    }
+    #services .box img{
+        height:110px;
+    }
+    #client{
+        gap:10px;
+    }
+    #client img{
+        height:70px;
+    }
+    #form form{
+        width:95%;
+    }
+    #form input,
+    #form textarea{
+        font-size:1rem;
+    }
+    .form-box .btn{
+        width:100%;
+    }
+    footer{
+        font-size:.85rem;
+        padding:15px;
+    }
+}
