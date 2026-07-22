@@ -22,7 +22,7 @@ A responsive restaurant website built using HTML, CSS and JavaScript.
 
 ## Live Demo
 
-
+https://ishmal-maqsood123.github.io/restaurant-website/
 
 ## GitHub
 
